@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300&family=Vidaloka&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8c1b0573ac.js" crossorigin="anonymous"></script>
+  <script src="js/site.js"></script>
+  <title>HiddenLevers.com</title>
+</head>
+<body>
+  <header class="topNav">
+    <nav class="topNav-container">
+      <ul class="topNav-items">
+        <li class="topNav-item">
+          <a href="#top" class="topNav-link">Top</a>
+        </li>
+        <li class="topNav-item">
+          <a href="#the-story" class="topNav-link">The Story</a>
+        </li>
+        <li class="topNav-item">
+          <a href="#highlights" class="topNav-link">Highlights</a>
+        </li>
+        <li class="topNav-item">
+          <a href="#sign-up" class="topNav-link">Sign Up</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero pageSection pageSection--dark">
+    <div class="u-verticallySpace u-verticallySpace--loose">
+      <div class="hero-logo">
+        <div class="hero-logoMarkPlaceholder">
+          <img class="hero-logoMark" src="/assets/logo-mark-alt.svg" alt="HiddenLevers Logo" />
+        </div>
+        <div><span class="hero-logoHidden">Hidden</span><span class="hero-logoSpace"> </span><span class="hero-logoLevers">Levers</span></div>
+      </div>
+      <div class="hero-content columns" style="--num-columns: 8">
+        The body is a complex machine, and ten years ago I suspected
+        mine was out of tune. <strong>Join me</strong> on my continued journey of
+        uncovering its many hidden levers &mdash; and experimenting my
+        way to mastering&nbsp;them.
+      </div>
+      <div class="subscriptionForm">
+        <squarespace:block-field id="heroSignup" columns="12"/>
+      </div>
+    </div>
+  </section>
+
+  <section id="the-story" class="theStory pageSection pageSection--white">
+    <div class="columns" style="--num-columns: 8">
+      <div class="u-verticallySpace u-verticallySpace--loose">
+        <h1 class="heading heading--1">
+          The Story
+        </h1>
+
+        <div class="theStory-body">
+          <div class="u-verticallySpace u-verticallySpace--normal">
+            <p>
+              The body is a complex machine and ten years ago I suspected mine was out of tune. I&rsquo;ve been on hunt
+              for remedies to my own foibles and ailments. Somewhat out of necessity I&rsquo;ve become a health geek and
+              self-experimenter trying to deal with real cognitive problems affecting by energy and happiness. So this
+              chronicles how I&rsquo;m getting &ldquo;back to normal&rdquo; not pushing myself to the optimal edge for
+              seemingly trivial things. This is an important distinction that separates the geeks (a.k.a. me) from the
+              self-help gurus.
+            </p>
+
+            <p>
+              The interesting thing about society today is it&rsquo;s anything but normal. There is an evolutionary
+              disconnect between our biology and the expectations of the 21st century. So I suspect I&rsquo;ve been
+              through what some of you are also going through, which is why I&rsquo;d like to share these experiments and give you a
+              front row seat to follow the breadcrumbs.
+            </p>
+
+            <p>
+              Join me on my continued journey of uncovering the body&rsquo;s many hidden levers – and experimenting my way
+              to mastering them.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="photoContainer photoContainer--palms"></div>
+
+  <section id="highlights" class="recentPosts pageSection pageSection--light">
+    <div class="columns u-horizontallySpace" style="--num-columns: 8; --spacing: 1">
+      <div class="u-verticallySpace" style="--spacing: 4">
+        <h1 class="heading heading--1">
+          Highlights from the Newsletter
+        </h1>
+        <squarespace:query collection="home" limit="4">
+          <ul class="recentBlogPosts">
+            {.repeated section items}
+            <li class="recentBlogPost">
+              <h2 class="recentBlogPost-title heading heading--2">
+                <a href="{fullUrl}" class="recentBlogPost-link link">
+                  {title}
+                </a>
+              </h2>
+              <div class="recentBlogPost-excerpt">
+                {excerpt}
+              </div>
+            </li>
+            {.end}
+          </ul>
+        </squarespace:query>
+      </div>
+    </div>
+  </section>
+
+  <section id="sign-up" class="signUp pageSection pageSection--white">
+    <div class="columns" style="--num-columns: 8">
+      <div class="u-verticallySpace u-verticallySpace--loose">
+        <h1 class="heading heading--1">
+          Sign up for more every month
+        </h1>
+        <form class="subscriptionForm">
+          <div class="u-verticallySpace u-verticallySpace--tight">
+            <input class="input input--text" type="email" placeholder="Your Email Address"/>
+            <button type="submit" class="button button--primary">Subscribe</button>
+            <a class="link text--secondary" href="#">Privacy Policy</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="siteFooter pageSection pageSection--dark">
+    <div class="columns u-horizontallySpace" style="--num-columns: 8; --spacing: 1">
+      <div class="columns" style="--num-columns: 4">
+        <nav class="footerNav">
+          <ul class="footerNav-items">
+            <li class="footerNav-item">
+              <a href="#" class="footerNav-link">
+                The Story
+              </a>
+            </li>
+            <li class="footerNav-item">
+              <a href="#" class="footerNav-link">
+                Highlights
+              </a>
+            </li>
+            <li class="footerNav-item">
+              <a href="#" class="footerNav-link">
+                Sign Up
+              </a>
+            </li>
+            <li class="footerNav-item">
+              <a href="#" class="footerNav-link">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="siteFooter-legalAndSocial columns" style="--num-columns: 4">
+        &copy; 2020 Justin Wasser. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
